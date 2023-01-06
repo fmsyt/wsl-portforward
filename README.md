@@ -13,10 +13,6 @@
    443,443
    ```
 
-## Register to task scheduler to run script on startup
-
-Run `register.bat` on your Windows.
-
 ## Scripts
 
 ### portforward.bat
