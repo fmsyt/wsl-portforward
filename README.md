@@ -1,6 +1,6 @@
 # wsl-portforward
 
-## Preparing
+## Prepare
 
 1. Copy `port.csv.example` to `port.csv` on same directory.
 2. Set port number what you needed.
