@@ -26,4 +26,4 @@ Delete Listened ports according to `port.csv`.
 ### register.bat
 
 Register to TaskScheduler.
-It make schedule to run portforwarding on startup Windows.
+It make schedule to run `startup.vbs` on startup Windows.
