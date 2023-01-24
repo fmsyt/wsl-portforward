@@ -7,3 +7,4 @@ if NOT "%LEVEL%"=="High" (
 )
 
 schtasks /create /tn %username%\wsl-startup /tr "%~dp0startup.vbs" /sc onstart /rl highest /delay 0000:05
+powershell -executionpolicy bypass .\function\disableOnlyRunAc.ps1 -taskName %username%\wsl-startup
