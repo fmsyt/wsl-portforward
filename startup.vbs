@@ -15,4 +15,4 @@ set sfs = createObject("Scripting.FileSystemObject")
 Dim ws
 Set ws = WScript.CreateObject("WScript.Shell")
 
-ws.run "cmd /c " + sfs.getParentFolderName(WScript.ScriptFullName) + "\portforward.bat", 0
+ws.run "powershell -executionpolicy bypass " + sfs.getParentFolderName(WScript.ScriptFullName) + "\portforward.ps1", 0

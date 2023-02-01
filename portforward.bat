@@ -14,7 +14,7 @@ if NOT "%LEVEL%"=="High" (
 
 for /f %%i in ('wsl exec hostname -I') do set ip=%%i
 
-for /f "skip=1 tokens=1,2* delims=," %%i in (%~dp0port.csv) do (
+for /f "skip=1 tokens=1,2,3* delims=," %%i in (%~dp0port.csv) do (
     netsh interface portproxy delete v4tov4 listenport=%%i
     netsh interface portproxy add v4tov4 listenport=%%i connectport=%%j connectaddress=%ip%
 )
