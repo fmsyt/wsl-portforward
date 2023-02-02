@@ -7,15 +7,15 @@
     e.g.) Listen SSH, HTTP, HTTPS.
 
    ```port.csv
-   Listen,Connect
-   22,22
-   80,80
-   443,443
+   Distribution,Listen,Connect
+   Ubuntu,22,22
+   Ubuntu,80,80
+   Ubuntu,443,443
    ```
 
 ## Scripts
 
-### portforward.bat
+### portforward.bat / portforward.ps1
 
 Listen ports according to `port.csv`.
 
